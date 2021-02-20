@@ -1,7 +1,7 @@
 # Leaflet Challenge: Visualizing Geographical Data #
 
 
-![USGS Logo](/Leaflet-Step 1/Images/1-Logo.png)
+![USGS Logo](/Images/1-Logo.png)
 
 
 ## Background ##
