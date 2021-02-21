@@ -56,7 +56,7 @@ function createFeatures(earthquakeData) {
 
 function createMap(earthquakes) {
 
-    // Define streetmap and darkmap layers
+    // Defining the map layers
     var lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
         attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
         tileSize: 516,
@@ -87,7 +87,7 @@ function createMap(earthquakes) {
         myMap.panInsideBounds(bounds, { animate: false });
     });
 
-    // Create legend of map
+    // Create a legend for the map
     var legend = L.control({ position: 'bottomright' });
 
     legend.onAdd = function (map) {
@@ -96,7 +96,7 @@ function createMap(earthquakes) {
             magnitude = [0, 1, 2, 3, 4, 5];
 
 
-        // loop through our magnitude intervals and generate a label with a colored square for each interval
+        // loop through magnitude intervals and generate a label for each interval
         for (var i = 0; i < magnitude.length; i++) {
             div.innerHTML +=
                 '<i style="background:' + getColor(magnitude[i] + 1) + '"></i> ' +
