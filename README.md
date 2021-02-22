@@ -27,6 +27,6 @@ A map is created using Leaflet that plots all of the earthquakes from the data s
 
   - Markers reflect the magnitude of the earthquakes both size and color (higher magnitude = bigger marker and darker color).
 
-  - Popup of each earthquake contain information about place, time and magnitude.
+  - Popup of each earthquake contains information about place, time and magnitude.
 
   - Legend on the bottom-right of the map that will provide context for the map data.
